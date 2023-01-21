@@ -3,20 +3,20 @@
     border-radius: 4px;
     border: none;
   
-  &--light {
+&--light {
     color: inherit;
     background-color: $buttonColor;
     cursor: pointer;
     justify-content: center;
   
-  &--modifer {
+&--modifer {
     display: flex;
     margin: auto;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 
-  &--modifer:focus, 
+&--modifer:focus, 
 &--modifer:hover {
   color: var(--white-color);
   background-color: var(--web-color-blue);

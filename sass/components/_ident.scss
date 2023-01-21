@@ -6,7 +6,7 @@
     padding: 0px;
     gap: 30px;
   
-  &_pictogram--modifer {
+  &__pictogram--modifer {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;
@@ -14,8 +14,8 @@
     transition: fill $trans,
     border $trans;
 
-&_pictogram--modifer:hover,
-&_pictogram--modifer:focus {
+&__pictogram--modifer:hover,
+&__pictogram--modifer:focus {
   fill: $logoActive;
   border: 1px solid $logoActive;}
 }
