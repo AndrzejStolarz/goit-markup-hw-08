@@ -1,0 +1,67 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+  
+  
+
+  &--black{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $mainFont;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+  
+  &--blue{color: $logoActive;
+    transition: color $trans;}
+
+  &--blue::after{    
+        background-color:$logoActive;
+        content: '';
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 4px;
+        bottom: -39px;
+        border-radius: 2px;
+
+        &-headline {
+            color: inherit;
+            text-decoration: none;
+            transition: $trans;
+            
+          
+          &-headline:hover,
+&-headline:focus {
+  color:$logoActive;
+  fill: $logoActive;
+  
+
+&-headline--modifer{ color:$logoActive;
+    transition: $trans;}
+}
+        }
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

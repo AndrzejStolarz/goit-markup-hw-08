@@ -1,0 +1,202 @@
+.backdrop{ display:flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+.is-hidden {
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition-delay: 500ms;
+        transition-property:opacity, visibility;
+        transition-duration: 250ms;
+        transition-timing-function: ease-out;
+        
+        }
+.modal {
+            position: relative;
+            width: 528px;
+            height: 581px;
+            background-color:$fillColor;
+            border-radius: 4px;
+            box-shadow: $modalShadow;
+            transform: translateY(0);
+            transition-property: transform;
+            transition-duration: $trans;
+            transition-timing-function: $trans;
+            
+
+&__name {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+                margin: 40px 40px 12px 40px;
+                text-align: center;
+            
+        
+&__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 40px;
+
+
+&__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $modalColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+&__label--modifer {
+  fill: $modalColor;
+  display: flex;
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  transition: fill $trans;
+
+
+
+
+&__text--modifer {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+  outline: none;
+  transition: border-color $trans;
+  
+
+&__icon--modifer {
+    fill: $mainFont;
+    display: flex;
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+    transition: fill $trans;
+
+&__comment--modifer {
+    font-weight: 400;
+    font-size: 12px;    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $mailColor;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+  }
+}
+}
+}
+}
+}
+}
+
+  
+  
+
+
+            
+.is-hidden .modal {
+         transform: translateY(-100%) scale(0.25);
+                }
+
+ .check {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 14px;
+  margin-top: 20px;
+
+&check__wrap {
+    position: relative;
+    width: 16px;
+  
+  &check-hidden--black {
+    appearance: none;
+    padding: 8px; 
+    border: 2px;
+   color: $mainFont; 
+  
+  
+  
+  &__not-checked--black {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 8px;
+    left: 0;
+    opacity: 1;
+    height: 15px;
+    width:  16px;
+    border-radius: 2px;
+   border: solid 1px $mainFont;
+  
+  &__checked--blue{
+    position: absolute;
+    transform: translate(0%, -50%);
+    background-color: $logoActive;
+    top: 8px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    height: 15px;
+    width:  16px;
+    border-radius: 2px;
+    border: solid 1px $logoActive;
+  
+    
+  
+  
+  &__status--black{
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $modalColor;
+      position: relative;
+      display: flex;
+     gap: 4px;
+  
+
+  &__link--blue {
+    text-decoration: underline;
+    color: $modalColor;
+}
+  }
+}
+  }
+}
+}
+ }
+
+.check-hidden:checked ~ .check-checked {
+    opacity: 1;
+}
+
+.check-hidden:checked + .check-not-checked {
+    opacity: 0;
+}

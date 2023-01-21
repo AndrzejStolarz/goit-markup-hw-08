@@ -1,0 +1,22 @@
+.ident {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0px;
+    gap: 30px;
+  
+  &_pictogram--modifer {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    padding: 18px 32px 15px 32px;
+    transition: fill $trans,
+    border $trans;
+
+&_pictogram--modifer:hover,
+&_pictogram--modifer:focus {
+  fill: $logoActive;
+  border: 1px solid $logoActive;}
+}
+}

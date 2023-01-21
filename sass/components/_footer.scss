@@ -1,0 +1,10 @@
+.footer--grey {
+    padding: 60px 0;
+    background:$backroundColor;
+  
+  &__box {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+  
