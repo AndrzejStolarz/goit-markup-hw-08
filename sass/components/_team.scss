@@ -1,35 +1,35 @@
-
-
-
-.team--light {
+.team{
     background: #f5f4fa;
+    text-decoration: none;
+    
+
   
 
-  &__title{
+&__title{
     font-size: 36px;
     line-height: 1.66;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;}
   
-  &__wrap {
+&__wraps{
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: center;}
   
   
-  &__photo--shadow {
+&__photo--shadow {
     background-color: #ffffff;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;}
 
- &__name {
+&__name {
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 30px;}
       
   
 &__deatil {
@@ -37,11 +37,11 @@
         line-height: 1.18;
         letter-spacing: 0.03em;
         text-align: center;
-        color: var(--mail-color);
+        color: $mailColor;
       }
       
 &__frame {
-    padding-bottom: 30px;
+    padding-bottom: 30px;}
   
 
 &__icon {
@@ -49,31 +49,24 @@
     justify-content: center;
     gap: 10px;
     padding-top: 6px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;}
     
   
 
 &__icon--modifer {
-    fill: var(--grey-color);
+    fill:$mailColor;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     outline: none;
     display: flex;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $trans,
+    fill $trans;}
 
 &__icon--modifer:focus,
 &__icon--modifer:hover {
-   fill: var(--white-color);
-   background-color: var(--web-color-blue);
-}
-}
-}
-}
-    }
-}
-  }
+   fill:$fillColor;
+   background-color:$logoActive;
 }
 }

@@ -16,35 +16,37 @@
     />
 
     <title>Studio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link rel="stylesheet" href="./css/main.min.css" />
+    
   </head>
   <!--Część tekstowa-->
   <body>
     <header class="line ">
-      <nav class="line-up       line-under container">
-        <div class="flex-nav   general-nav">
+      <nav class=" line__under container">
+        <div class="general-nav">
           <a class="logo        logo--black" href="./index.html"
-            ><span class="web   logo--blue"> Web</span>Studio</a
+            ><span class="logo--blue"> Web</span>Studio</a
           >
 
-          <ul class="flex-link    menu  links   menu--blue">
-            <li class="menu-active    menu--blue">
-              <a class="menu  menu-headline     menu--active " href="#">Agencja</a></li>
+          <ul class=" menu menu__link--basic">
+            <li class="  menu--blue">
+              <a class="menu  menu__headline    " href="#">Agencja</a></li>
             <li>
-              <a class=" menu menu-headline    menu--active" href="./portfolio.html"
+              <a class=" menu menu__headline  " href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li><a class=" menu menu-headline   menu--active" href="#">Kontakt</a></li>
+            <li><a class=" menu menu__headline " href="#">Kontakt</a></li>
           </ul>
 
-          <ul class="flex-cont link    links link--black  ">
+          <ul class=" link  link--black  ">
             <li>
               <a
-                class="mail link--grey      menu menu--active"
+                class="link--grey       menu menu__headline "
                 href="mailto:info@devstudio.com"
               >
-                <svg class="con-icons  link__icons" width="16" height="12">
+                <svg class="link__icons" width="16" height="12">
                   <use
                     width="16"
                     x="0"
@@ -57,10 +59,10 @@
             </li>
             <li>
               <a
-                class=" mail link--grey   menu  menu--active"
+                class=" link--grey   menu  menu__headline "
                 href="tel:+48111111111"
               >
-                <svg class="con-icons  link__icons" width="10" height="16">
+                <svg class="link__icons" width="10" height="16">
                   <use
                     width="10"
                     x="0"
@@ -76,13 +78,13 @@
     </header>
     <main>
       <!--EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU-->
-      <section class="banner   background-title   photo  banner--grey section">
+      <section class="banner   background-title banner--grey section">
         <div class="container">
           <h1 class="title   banner__title">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="  buttons  btn--light   button  btn  bttn  btn--modifer" type="button" data-modal-open>
+          <button class="  buttons  btn--light     bttn btn btn--modifer" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -93,51 +95,51 @@
         <div class="container">
           <ul class="symbol">
             <li>
-              <div class="icons-bckground  symbol__icon symbol--quiet ">
+              <div class="symbol__icon symbol--quiet ">
                 <svg class="symbol__pictogram " width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="h3  symbol__title">LOREM IPSUM</h3>
-              <p class="lorem  symbol___text--grey">
+              <h3 class="symbol__title">LOREM IPSUM</h3>
+              <p class=" symbol__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div>
-                <svg width="70" height="70">
+              <div class="symbol__icon symbol--quiet ">
+                <svg class="symbol__pictogram " width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="h3 symbol__title">LOREM IPSUM</h3>
-              <p class="lorem  symbol___text--grey">
+              <h3 class="symbol__title">LOREM IPSUM</h3>
+              <p class="symbol__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
 
             <li>
-              <div>
-                <svg width="70" height="70">
+              <div class="symbol__icon symbol--quiet ">
+                <svg class="symbol__pictogram " width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="h3 symbol__title">LOREM IPSUM</h3>
-              <p class="lorem symbol___text--grey">
+              <h3 class="symbol__title">LOREM IPSUM</h3>
+              <p class="symbol__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
 
             <li>
-              <div>
-                <svg width="70" height="70">
+              <div class="symbol__icon symbol--quiet ">
+                <svg class="symbol__pictogram " width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="h3 symbol__title">LOREM IPSUM</h3>
-              <p class="lorem symbol___text--grey">
+              <h3 class="symbol__title">LOREM IPSUM</h3>
+              <p class="symbol__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -147,46 +149,46 @@
       </section>
 
       <!--What we do-->
-      <section class="section about  info ">
+      <section class="section info ">
         <div class="container">
-          <h2 class="h2  info__title">Czym się zajmujemy</h2>
-          <ul class="random info__box">
+          <h2 class="info__title">Czym się zajmujemy</h2>
+          <ul class="info__box">
             <li>
-              <div class="random-photo info__photo">
-              <img class=" info__photo-space"
+              <div class="info__photo">
+              <img class=" info__photo--space"
                 src="images/img.jpg"
                 alt="ręce na klawiaturze"
                 width="370"
                 height="249"
               />
                <div>
-                <p class="overlay-random info__overlay--color">Aplikacje Komputerowe</p>
+                <p class="info__overlay--color">Aplikacje Komputerowe</p>
               </div>
               </div>
             </li>
             <li>
               <div class="random-photo info__photo">
-              <img class=" info__photo__space"
+              <img class=" info__photo--space"
                 src="images/img1.jpg"
                 alt=" laptop i telefon"
                 width="370"
                 height="249"
               />
               <div>
-              <p class="overlay-random  info__overlay--color">Aplikacje Mobilne</p>
+              <p class="info__overlay--color">Aplikacje Mobilne</p>
               <div>
             </div>
           </div>
             </li>
             <li>
-              <div class="random-photo info__photo">
+              <div class="info__photo">
               <img class=" info__photo__space"
                 src="images/img6.jpg"
                 alt=" paleta barw"
                 width="370"
                 height="249"
               />
-              <div> <p class="overlay-random  info__overlay--color">Rozwiązania graficzne</p>
+              <div> <p class=" info__overlay--color">Rozwiązania graficzne</p>
               </div>
               </div>
             </li>
@@ -194,12 +196,12 @@
         </div>
       </section>
       <!--Our team-->
-      <section class="section team-section    team--light">
+      <section class="section  team">
         <div class="container">
-          <h2 class="h2   team__title">Nasz zespół</h2>
-          <ul class="team    team__wrap">
+          <h2 class="team__title">Nasz zespół</h2>
+          <ul class=" team__wraps">
             <li>
-              <figure class="member-team team__photo--shadow">
+              <figure class="team__photo--shadow">
                 <img 
                   src="images/img2.jpg"
                   alt="Product Designer photo"
@@ -207,10 +209,10 @@
                   height="260"
                 />
                 <figcaption>
-                  <h3 class="name  team__name">John Doe</h3>
-                  <p class="staff team__detail  under  team__frame">Product Designer</p>
-                  <div class="soc-media team__icon">
-                    <a href="#" class="soc-team  team__icon--modifer">
+                  <h3 class="team__name">John Doe</h3>
+                  <p class="team__detail team__frame">Product Designer</p>
+                  <div class="team__icon">
+                    <a href="#" class="team__icon--modifer">
                       <svg  width="44px" height="44px">
                         <use
                           width="20"
@@ -219,7 +221,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -228,8 +230,8 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
-                      <svg width="44px" hei0ght="44px">
+                    <a href="#" class="team__icon--modifer">
+                      <svg width="44px" height="44px">
                         <use
                           width="20"
                           x="12"
@@ -237,7 +239,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -251,7 +253,7 @@
               </figure>
             </li>
             <li>
-              <figure class="member-team team__photo--shadow">
+              <figure class="team__photo--shadow">
                 <img
                   src="images/img3.jpg"
                   alt="John Doe photo"
@@ -259,10 +261,10 @@
                   height="260"
                 />
                 <figcaption>
-                  <h3 class="name team__name">John Doe</h3>
-                  <p class="staff  team__detail under  team__frame">Front Developer</p>
-                  <div class="soc-media team__icon">
-                    <a href="#" class="soc-team  team__icon--modifer">
+                  <h3 class="team__name">John Doe</h3>
+                  <p class="team__detail  team__frame">Front Developer</p>
+                  <div class="team__icon">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -271,7 +273,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -280,7 +282,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -289,7 +291,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team  team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -303,7 +305,7 @@
               </figure>
             </li>
             <li>
-              <figure class="member-team   team__photo--shadow">
+              <figure class="team__photo--shadow">
                 <img
                   src="images/img4.jpg"
                   alt="John Doe photo"
@@ -311,10 +313,10 @@
                   height="260"
                 />
                 <figcaption>
-                  <h3 class="name team__name">John Doe</h3>
-                  <p class="staff team__detail under team__frame ">Marketing</p>
-                  <div class="soc-media team__icon">
-                    <a href="#" class="soc-team  team__icon--modifer">
+                  <h3 class="team__name">John Doe</h3>
+                  <p class="team__detail team__frame ">Marketing</p>
+                  <div class="team__icon">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -323,7 +325,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team  team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -332,7 +334,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team  team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -341,7 +343,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team  team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -355,7 +357,7 @@
               </figure>
             </li>
             <li>
-              <figure class="member-team   team__photo--shadow">
+              <figure class="team__photo--shadow">
                 <img
                   src="images/img5.jpg"
                   alt="John Doe photo"
@@ -363,10 +365,10 @@
                   height="260"
                 />
                 <figcaption>
-                  <h3 class="name team__name">John Doe</h3>
-                  <p class="staff  team__detail under  team__frame">UI Designer</p>
-                  <div class="soc-media team__icon">
-                    <a href="#" class="soc-team team__icon--modifer">
+                  <h3 class="team__name">John Doe</h3>
+                  <p class=" team__detail team__frame">UI Designer</p>
+                  <div class="team__icon">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -375,7 +377,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -384,7 +386,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class="team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -393,7 +395,7 @@
                         ></use>
                       </svg>
                     </a>
-                    <a href="#" class="soc-team team__icon--modifer">
+                    <a href="#" class=" team__icon--modifer">
                       <svg width="44px" height="44px">
                         <use
                           width="20"
@@ -412,11 +414,11 @@
       <!--Costumers-->
       <section class="section">
         <div class="container">
-          <h2 class="h2  info__title">Nasi klienci</h2>
+          <h2 class="info__title">Nasi klienci</h2>
         </div>
-        <ul class="clients  ident">
+        <ul class="ident">
           <li>
-            <svg width="170" height="92" class="company ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
               <use
                 width="106"
                 height="60.04"
@@ -425,28 +427,28 @@
             </svg>
           </li>
           <li>
-            <svg width="170" height="92" class="company ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
               <use href="./images/icons.svg#icon-l2"></use>
             </svg>
           </li>
           <li>
-            <svg width="170" height="92" class="company  ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
               <use href="./images/icons.svg#icon-l3"></use>
             </svg>
           </li>
           <li>
-            <svg width="170" height="92" class="company  ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
               <use href="./images/icons.svg#icon-l4"></use>
             </svg>
           </li>
           <li>
-            <svg width="170" height="92" class="company  ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
  
               <use href="./images/icons.svg#icon-l5"></use>
             </svg>
           </li>
           <li>
-            <svg width="170" height="92" class="company  ident__pictogram">
+            <svg width="170" height="92" class="ident__pictogram--modifer">
               <use href="./images/icons.svg#icon-l6"></use>
             </svg>
           </li>
@@ -454,26 +456,26 @@
       </section>
     </main>
     <!--footer-->
-    <footer class="downline-footer  footer--grey  ">
+    <footer class=" footer--grey  ">
       <div class="container">
-        <div class="footer-boxs footer__box">
+        <div class=" footer__box">
           <div>
-            <a class="logo logo-web logo--black" href="./index.html"
-              ><span class="web     logo--blue"> Web</span
-              ><span class="studio  logo--white">Studio</span></a
+            <a class="logo logo--black" href="./index.html"
+              ><span class="logo--blue"> Web</span
+              ><span class="logo--white">Studio</span></a
             >
             <address>
-              <ul class="address logo__address--white ">
+              <ul class="logo__address--white ">
                 <li>m. Warszawa Aleje Jerozolimskie 21</li>
                 <li>
                   <a
-                    class=" mail link--grey"
+                    class="link--grey"
                     href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li>
-                  <a class=" mail   link--grey" href="tel:+48111111111"
+                  <a class="link--grey" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
@@ -481,11 +483,11 @@
             </address>
           </div>
           <!--join us-->
-          <div class="social-range  join--white">
-            <p class="join__font ">DOŁĄCZ DO NAS</p>
-            <ul class="join-to  join__box">
+          <div class="join">
+            <p class="join__font">DOŁĄCZ DO NAS</p>
+            <ul class="join__box">
               <li>
-                <svg class="icons-footer join__icon--modifer" width="44" height="44">
+                <svg class="join__icon--modifer" width="44" height="44">
                   <use
                     width="20"
                     x="12"
@@ -494,7 +496,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="icons-footer join__icon--modifer" width="44" height="44">
+                <svg class="join__icon--modifer" width="44" height="44">
                   <use
                     width="20"
                     x="12"
@@ -503,7 +505,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="icons-footer join__icon--modifer" width="44" height="44">
+                <svg class="join__icon--modifer" width="44" height="44">
                   <use
                     width="20"
                     x="12"
@@ -512,7 +514,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="icons-footer join__icon--modifer" width="44" height="44">
+                <svg class="join__icon--modifer" width="44" height="44">
                   <use
                     width="20"
                     x="12"
@@ -522,118 +524,118 @@
               </li>
             </ul>
           </div>
-        
+        </div>
         <!--footer newsletter-->
 
         
-        <div class="footer-newsletter   newsletter  ">
-          <h3 class="newsletter__title">Zapisz się do newslettera</h3>
-          <form class="sub-box  newsletter__box ">
+        <div class="newsletter  ">
+          <h3 class="newsletter__title-text">Zapisz się do newslettera</h3>
+          <form class="newsletter__box ">
             <input
-              class="form-sub newsletter__label--modifer"
+              class="newsletter__label--modifer"
               type="email"
               name="subscribe"
               placeholder="E-mail"
               required
             />
-            <button class="button-subscribe  newsletter__btn--modifer" type="submit">
-              <span class="sub-button-text  newsletter__btn--white">Zapisz się</span>
-              <svg class="icon-send-sub newsletter--white" width="24" height="24">
+            <button class="newsletter__btn--modifer" type="submit">
+              <span class="newsletter__btn--white">Zapisz się</span>
+              <svg class="newsletter--white" width="24" height="24">
                 <use href="./images/send.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
-    
+      </div>
       </footer>
       
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-close" data-modal-close>
+        <button type="button" class="btn--close " data-modal-close>
           <svg width="18" height="18"> 
           <use href="./images/close.svg#icon-close"></use>
         </svg>
       </button>
 
-      <h4 class="modal-name      modal__name">Zostaw swoje dane formularzu poniżej</h4>
-      <form class="contact-form  modal__form" autocomplete="on">
+      <h4 class="modal__name">Zostaw swoje dane formularzu poniżej</h4>
+      <form class="modal__form" autocomplete="on">
         <div>
-           <label class="label-modal  modal__label" for="name">
+           <label class="modal__label" for="name">
             Imię
-            <svg width="18" height="18" class="form-icon modal__icon--modifer">
+            <svg width="18" height="18" class="modal__icon--modifer">
               <use href="./images/symbols.svg#icon-person-black-18dp-1">
               </use>
             </svg>
-            <input class="form-modal  modal__text--modifer"
+            <input class="modal__text--modifer"
             type="text"
             name="name"
             id="name"/>
           </label>
         </div>
         <div>
-          <label class="label-modal  modal__label" for="tel">
+          <label class="modal__label" for="tel">
            Telefon
           <div>
-           <svg width="18" height="18" class="form-icon  modal__icon--modifer">
+           <svg width="18" height="18" class="modal__icon--modifer">
              <use href="./images/symbols.svg#icon-phone-black-18dp-1">
              </use>
            </svg>
            </div>
-           <input class="form-modal modal__text--modifer"
+           <input class="modal__text--modifer"
            type="text"
            name="tel"
            id="tel"/>
          </label>
        </div>
        <div>
-          <label class="label-modal modal__label" for="email">
+          <label class="modal__label" for="email">
            Email
-           <svg width="18" height="18" class="form-icon  modal__icon--modifer">
+           <svg width="18" height="18" class=" modal__icon--modifer">
              <use href="./images/symbols.svg#icon-email-black-18dp-1">
              </use>
            </svg>
-           <input class="form-modal modal__text--modifer"
+           <input class="modal__text--modifer"
            type="text"
            name="email"
            id="email"/>
          </label>
        </div>
        <div>
-          <label class="label-modal modal__label" for="comment">
+          <label class="modal__label" for="comment">
            Komentarz</label>
            <label>
            <textarea 
-           class="form-comment modal__comment--modifer"
+           class="modal__comment--modifer"
            name="feedback"
            placeholder="Wprowadź tekst"
            id="feedback"></textarea>
         </label>
 
           <label class="label-box  check">
-            <div class="check-wrapper chceck__wrap">
+            <div class=" chceck__wrap">
               <input
                 type="checkbox"
                 name="checkbox-accept"
-                class="checkbox-hidden check__hidden--black"
+                class="check__hidden--black"
                 value="agreed"
                 requiredd
                 />    
-            <svg width="16" height="15" class="checkbox-not-checked check__not-checked--black">
+            <svg width="16" height="15" class="check__not-checked--pasiv">
               <use href="./images/check.svg#icon-Vector-3"></use>
             </svg>
-            <svg width="16" height="15" class="checkbox-checked  check__checked--blue">
+            <svg width="16" height="15" class=" check__checked--activ">
               <use href="./images/check.svg#icon-Vector-3"></use>
             </svg>
           </div>
-            <span class="statut-info  check__status--black">
+            <span class="check__status">
              Oświadczam iż akceptuję
-              <a class="statut-link   check__link--blue" href="#">Regulamin </a>
-              i <a class="statut-link check__link--blue" href="#"> Politykę prywatności.</a>
+              <a class="check__link" href="#">Regulamin </a>
+              i <a class="check__link" href="#"> Politykę prywatności.</a>
              </span>
           </label> 
          </label>
-         <button class="bttn-statut check__btn--modifer" type="submit">Wyślij</button>
+         <button class="check__btn--modifer" type="submit">Wyślij</button>
         </div>
        </form>
       </div>

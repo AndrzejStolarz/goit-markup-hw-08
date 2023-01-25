@@ -14,10 +14,10 @@
     margin-right: 93px;
   
     &--black 
-   {color: $mainFont;
+   {color: $mainFont;}
       
     &--blue {
-    color: $logoActive;
+    color: $logoActive;}
 
    &__address--white {
       display: inline;
@@ -28,10 +28,13 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       text-align: left;
-      color: var(--white-color);
+      color: $fillColor;
     }
   }
-}
-}
 
 
+  .general-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

@@ -6,17 +6,17 @@
     padding: 0px;
     gap: 30px;
   
-  &__pictogram--modifer {
+ &__pictogram--modifer {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;
     padding: 18px 32px 15px 32px;
     transition: fill $trans,
-    border $trans;
+    border $trans;}
 
 &__pictogram--modifer:hover,
 &__pictogram--modifer:focus {
   fill: $logoActive;
   border: 1px solid $logoActive;}
 }
-}
+

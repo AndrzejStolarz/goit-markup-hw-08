@@ -14,18 +14,17 @@
     letter-spacing: 0.02em;
     display: flex;
     justify-content: space-between;
-    gap: 46px;
+    gap: 46px;}
   
 
   &--grey{
-    color: var(--mail-color);
-    text-decoration: none;
+    color:$mailColor;
+    text-decoration: none;}
   
-  &-icons {
+  &__icons {
     margin-right: 10px;
     justify-content: center;
     border-radius: 4px;
   }
 }
-  }
-}
+  

@@ -10,16 +10,16 @@
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;}
 
-    &__title {
+  &__title {
         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-align: center;
-        color: var(--white-color);
+        color:$fillColor;
         margin-bottom: 30px;
       }
     }
-}
+
     
