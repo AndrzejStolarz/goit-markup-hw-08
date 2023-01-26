@@ -142,17 +142,18 @@
 
 &__wrap {
     position:relative;
+    
     width: 16px;}
   
 &__hidden {
-    
+    display: none;
     padding: 8px; 
     border: 2px;
     color: $mainFont; }
   
   
   
-&not-checked {
+&__not-checked {
     position: relative;
     transform: translate(0%, -50%);
     top: 8px;
@@ -165,7 +166,7 @@
   
 &__checked{
     position: relative;
-    transform: translate(0%, -50%);
+    transform: translate(-120%, -50%);
     background-color:$logoActive;
     top: 8px;
     left: 0;
@@ -187,7 +188,7 @@
         color: $modalColor;
         position: relative;
         display: flex;
-       gap: 4px;}
+        gap: 4px;}
     
 
   &__link {
