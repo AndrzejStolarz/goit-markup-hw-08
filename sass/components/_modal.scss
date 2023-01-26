@@ -128,8 +128,10 @@
          transform: translateY(-100%) scale(0.25);
                 }
 
- .check {
-  display: flex;
+
+.check {
+  display:flex;
+  position:relative;
   gap: 7px;
   margin-bottom: 30px;
   text-align: center;
@@ -139,19 +141,19 @@
   margin-top: 20px;
 
 &__wrap {
-    position: relative;
+    position:relative;
     width: 16px;}
   
-  &__hidden {
-    appearance: none;
+&__hidden {
+    
     padding: 8px; 
     border: 2px;
     color: $mainFont; }
   
   
   
-  &__not-checked--pasiv {
-    position: absolute;
+&not-checked {
+    position: relative;
     transform: translate(0%, -50%);
     top: 8px;
     left: 0;
@@ -159,12 +161,12 @@
     height: 15px;
     width:  16px;
     border-radius: 2px;
-   border: solid 1px $mainFont;}
+    border:solid 1px $mainFont;}
   
-  &__checked--active{
-    position: absolute;
+&__checked{
+    position: relative;
     transform: translate(0%, -50%);
-    background-color: $logoActive;
+    background-color:$logoActive;
     top: 8px;
     left: 0;
     opacity: 0;
@@ -172,21 +174,21 @@
     height: 15px;
     width:  16px;
     border-radius: 2px;
-    border: solid 1px $logoActive;}
+    border:solid 1px $logoActive;}
   
     
   
   
-  &__status{
-    font-weight: 400;
-      font-size: 14px;
-      line-height: 1.17;
-      letter-spacing: 0.01em;
-      color: $modalColor;
-      position: relative;
-      display: flex;
-     gap: 4px;}
-  
+    &__status{
+      font-weight: 400;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $modalColor;
+        position: relative;
+        display: flex;
+       gap: 4px;}
+    
 
   &__link {
     text-decoration: underline;
@@ -212,18 +214,22 @@
     margin-left: 124px;
     margin-top: 20px;
     padding: 0;
-
-
- 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
  
-&__hidden:checked ~ &__checked--active {
+  &__hidden:checked ~ &__checked{
     opacity: 1;
 }
 
-&__hidden:checked + &__not-checked--pasiv {
+&__hidden:checked + &__not-checked {
     opacity: 0;
-}}
+}
+}
+
+
+
+
+
+
