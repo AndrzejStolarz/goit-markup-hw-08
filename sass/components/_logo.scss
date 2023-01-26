@@ -13,13 +13,14 @@
     top: 24px;
     margin-right: 93px;
   
-    &--black 
+    &__first
    {color: $mainFont;}
       
-    &--blue {
+    &__last {
     color: $logoActive;}
+    &__long{ color:$fillColor}
 
-   &__address--white {
+   &__address {
       display: inline;
       font-style: normal;
       text-decoration: none;

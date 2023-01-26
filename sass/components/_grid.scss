@@ -4,6 +4,8 @@
   justify-content: center;
   flex-wrap: wrap;
   transition: $trans;
+  text-decoration: none;
+  background-color: $fillColor;
   
   
   &__active--hover:hover,
@@ -29,9 +31,10 @@
     background-color: $logoActive;
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration:$trans ;
+    transition-duration:250ms;
     transition-timing-function:$trans;}
-  
+
+    
   
   &__photo--modifer:hover &__text--modifer {
     transform: translateY(0);}

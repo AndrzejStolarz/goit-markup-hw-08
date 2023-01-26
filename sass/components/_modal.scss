@@ -138,15 +138,15 @@
   margin-left: 14px;
   margin-top: 20px;
 
-&check__wrap {
+&__wrap {
     position: relative;
     width: 16px;}
   
-  &check-hidden--black {
+  &__hidden {
     appearance: none;
     padding: 8px; 
     border: 2px;
-   color: $mainFont; }
+    color: $mainFont; }
   
   
   
@@ -194,17 +194,36 @@
 }
   
   &__btn--modifer {
-    display: flex;
-    margin: auto;
+    
+    font-weight: 700;
+    font-size: 16px;
+    color:$fillColor;
+    background-color: $logoActive;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    margin-left: 124px;
+    margin-top: 20px;
+    padding: 0;
+
+
+ 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
- }
+ 
 .check-hidden:checked ~ .check-checked {
     opacity: 1;
 }
 
 .check-hidden:checked + .check-not-checked {
     opacity: 0;
-}
+}}
