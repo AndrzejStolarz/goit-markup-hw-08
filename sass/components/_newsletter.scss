@@ -47,22 +47,22 @@ padding-left: 16px;}
   transition: background-color $trans}
       
 
-      &__btn--white {
+      &__btn--basic {
         font-size: 16px;
        line-height: 1.875;
        letter-spacing: 0.06em;
        color: $fillColor;
      }
      
-&__btn--white:hover,
-&__btn--white:focus {
+&__btn--basic:hover,
+&__btn--basic:focus {
   background-color: $logoActive;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;}
 
 
-&--white {
+&--basic {
     fill: $fillColor;
    }
   }
