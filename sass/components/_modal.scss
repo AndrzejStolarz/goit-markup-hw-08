@@ -190,7 +190,7 @@
 
   &__link {
     text-decoration: underline;
-    color: $modalColor;
+    color: $logoActive;
 }
   
   &__btn--modifer {
@@ -220,10 +220,10 @@
   }
 
  
-.check-hidden:checked ~ .check-checked {
+&__hidden:checked ~ &__checked--active {
     opacity: 1;
 }
 
-.check-hidden:checked + .check-not-checked {
+&__hidden:checked + &__not-checked--pasiv {
     opacity: 0;
 }}
