@@ -15,15 +15,12 @@
     
 .is-hidden {
   visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-  transition-delay: 500ms;
-  transition-property:opacity, visibility;
-  transition-duration: 250ms;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.4);
-  transition-timing-function:ease-in-out;
-  animation-direction: reverse;}
+pointer-events: none;
+opacity: 0;
+transition-delay: 500ms;
+transition-property:opacity, visibility;
+transition-duration: 250ms;
+transition-timing-function: ease-out;}
   
 .modal {
   position: relative;
@@ -33,7 +30,7 @@
   border-radius: 4px;
   box-shadow: $modalShadow;
   transform: translateY(0);
-  transition-property: transform;
+  transition-property:transform;
   transition-duration: $trans;
   transition-timing-function: $trans;
             
