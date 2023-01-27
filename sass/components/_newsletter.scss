@@ -2,7 +2,7 @@
 width: 570px;
 height: 86px;
 margin-left: 78px;
-margin-top: 12px;
+margin-top: 0;
   
 
 &__title-text{transform: uppercase;
@@ -32,7 +32,7 @@ padding-left: 16px;}
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px ;}
 
-  &__btn--modifer {
+  &__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,10 +41,11 @@ padding-left: 16px;}
   border-radius: 4px;
   background-color: $logoActive;
   margin-left: 12px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+;
   padding: 0px 28px 0px 42px;
   gap: 24px;
-  transition: background-color $trans}
+  transition: background-color $trans
+}
       
 
       &__btn--basic {
@@ -54,8 +55,8 @@ padding-left: 16px;}
        color: $fillColor;
      }
      
-&__btn--basic:hover,
-&__btn--basic:focus {
+&__btn--ready:hover,
+&__btn--ready:focus {
   background-color: $logoActive;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
