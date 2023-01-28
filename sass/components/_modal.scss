@@ -165,8 +165,8 @@ transition-timing-function: ease-out;}
     border:solid 1px $mainFont;}
   
 &__checked{
-    position: relative;
-    transform: translate(-120%, -50%);
+    position: absolute;
+    transform: translate(0%, -50%);
     background-color:$logoActive;
     top: 8px;
     left: 0;
