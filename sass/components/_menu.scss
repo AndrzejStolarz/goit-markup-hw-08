@@ -34,11 +34,11 @@
         width: 100%;
         height: 4px;
         bottom: -39px;
-        border-radius: 2px;}
+        }
 
         &--activ:hover::after,
         &--activ:focus::after{ 
-          background-color: var(--web-color-blue);
+          background-color:$logoActive;
           content: '';
           display: flex;
           justify-content: center;
@@ -46,7 +46,6 @@
           width: 100%;
           height: 4px;
           bottom: -38px;
-          border-radius: 2px;
           }
         
  &__headline {

@@ -5,13 +5,14 @@ margin-left: 78px;
 margin-top: 0;
   
 
-&__title-text{transform: uppercase;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: $fillColor;
-    margin-bottom: 20px;}
+&__text{
+text-transform: uppercase;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $fillColor;
+  margin-bottom: 20px;}
     
 
 &__box {
