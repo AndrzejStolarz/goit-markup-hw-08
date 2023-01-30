@@ -90,19 +90,19 @@
   color:$mailColor;
   text-decoration: none;
   align-items: center;
-  justify-content: center;}
+  fill:$mailColor;}
 
 &__icon-envelop {
   margin-right: 10px;
   justify-content: center;
-  color:$mailColor;
+ ;
   
   
  }
 
  &__icon-tel{
   margin-right: 10px;
-  color:$mailColor;
+
   justify-content: center;
   color:$fillColor;
   
