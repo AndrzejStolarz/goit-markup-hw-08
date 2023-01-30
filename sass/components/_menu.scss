@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     color:inherit;
+    color: $mainFont;
     text-decoration:none;
   
     
@@ -10,7 +11,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: $mainFont;
     letter-spacing: 0.02em;
     display: flex;
     justify-content: space-between;
@@ -86,16 +86,26 @@
   gap: 46px;}
 
 
-&--reset{
+&__reset{
   color:$mailColor;
   text-decoration: none;}
 
-&__icons {
+&__icon-envelop {
   margin-right: 10px;
   justify-content: center;
+  color:$mailColor;
+  transform: translate(0%, 20%);
+ }
+
+ &__icon-tel{
+  margin-right: 10px;
+  justify-content: center;
+  color:$mailColor;
+  transform: translate(0%, -10%)
+}
 
 }
-}
+
 
   
 
