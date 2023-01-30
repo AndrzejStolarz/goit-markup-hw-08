@@ -42,7 +42,8 @@ padding-left: 16px;}
   border-radius: 4px;
   background-color: $logoActive;
   margin-left: 12px;
-  padding: 0px 28px 0px 42px;
+ 
+  width: 100%;
   gap: 24px;
   transition: background-color $trans
 }
