@@ -1,4 +1,47 @@
+
 .logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.033em;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    height: 31px;
+    
+  
+    &__first
+   {color: $mainFont;}
+      
+    &__last {
+    color: $logoActive;}
+    &__long{ color:$fillColor}
+
+   &__address {
+      display: inline;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: $fillColor;
+    }
+  }
+
+
+  .general-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*
+///TABLET///
+  @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd){
+  .logo {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -39,3 +82,49 @@
     justify-content: space-between;
     align-items: center;
   }
+  }
+///DESKTOP//
+  @media screen and (min-width: $breakpointDesktopStart){
+    .logo {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.033em;
+      text-decoration: none;
+      text-align: center;
+      border: none;
+      height: 31px;
+      width: 145px;
+      top: 24px;
+      margin-right: 93px;
+    
+      &__first
+     {color: $mainFont;}
+        
+      &__last {
+      color: $logoActive;}
+      &__long{ color:$fillColor}
+  
+     &__address {
+        display: inline;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: $fillColor;
+      }
+    }
+  
+  
+    .general-nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    }
+  */

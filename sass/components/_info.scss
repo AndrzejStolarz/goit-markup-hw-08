@@ -1,18 +1,19 @@
 .info {
-    padding-top: 0;
-  
-  &__title {
+  padding-top: 0;
+  display: none;
+
+&__title {
     font-size: 36px;
     line-height: 1.66;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+    display:none;}
   
   &__box {
-    display: flex;
-    gap: 30px;
-    justify-content: center;}
-
+    display: none;
+   }
+  
   &__overlay--basic {
         position: absolute;
         bottom: 0;
@@ -26,18 +27,22 @@
         font-size: 14px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        text-align: center;
+        text-align:center;
         text-transform: uppercase}
   
     
-
+  
   &__photo{
     position: relative;
     overflow: hidden;}
-
+  
     &__photo--space {
         vertical-align: bottom;
         }
       
-    }
+    
+      }
 
+
+
+    
