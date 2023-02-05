@@ -1,58 +1,81 @@
-
-
-
-
-
-
+//Media queries//   1200px//
+@media screen and (min-width: 1200px) {
 .info {
   padding-top: 0;
-  
-&__title {
+
+  &__title {
     font-size: 36px;
     line-height: 1.66;
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align:center;
     margin-bottom: 50px;
-    display:none;}
-
-  @media screen and (min-width: 1200px) {
-  display: flex;}
-
-    
-  
-  &__box {
-    display: none;
+   
   }
 
-    @media screen and (min-width: 1200px)
-    {display: flex;
-    gap: 30px;
-    justify-content: center}
-   
-  
-&__overlay--basic {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding-top: 27px;
-        background-color: rgba(47, 48, 58, 0.8);
-        color: $fillColor;
-        width: 370px;
-        height: 70px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-align:center;
-        text-transform: uppercase}
-  
+  &__box {
     
-  
-  &__photo{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__overlay--basic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $fillColor;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__photo {
     position: relative;
-    overflow: hidden;}
+    overflow: hidden;
+  }
+
+  &__photo--space {
+    vertical-align: bottom;
+  }}
+}
+
+@media only screen and (max-width: 1200px){
+  .info{
+    padding-top: 0;
+    display: none
   
-    &__photo--space {
-        vertical-align: bottom;
-        }
- }
+  
+
+  
+  }}
+
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    .info {
+  padding-top: 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.66;
+    letter-spacing: 0.03em;
+    text-align:center;
+    margin-bottom: 50px;
+  }}}
+
+@media screen and (min-width: 480px)and (max-width:768px ){
+  .info {
+  padding-top: 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.66;
+    letter-spacing: 0.03em;
+    text-align:center;
+    margin-bottom: 50px;
+}}}

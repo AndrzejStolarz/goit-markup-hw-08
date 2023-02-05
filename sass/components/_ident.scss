@@ -1,22 +1,80 @@
-.ident {
+@media screen and (min-width: 1200px) {
+  .ident {
     list-style: none;
     display: flex;
     justify-content: center;
     cursor: pointer;
     padding: 0px;
     gap: 30px;
-  
- &__pictogram--modifer {
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    fill: #afb1b8;
-    padding: 18px 32px 15px 32px;
-    transition: fill $trans,
-    border $trans;}
 
-&__pictogram--modifer:hover,
-&__pictogram--modifer:focus {
+    &__pictogram {
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      fill: #afb1b8;
+      padding: 18px 32px 15px 32px;
+      transition: fill $trans, border $trans;
+    }
+
+    &__pictogram:hover,
+    &__pictogram:focus {
+      fill: $logoActive;
+      border: 1px solid $logoActive;
+    }
+  }}
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+      width: 768px;
+    }
+    .ident {
+      padding: 0px;
+      gap: 30px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__pictogram {
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        fill: #afb1b8;
+        padding: 18px 32px 15px 32px;
+        transition: fill $trans, border $trans;
+      }
+    }
+  }
+
+
+.ident__pictogram:hover,
+.ident__pictogram:focus {
   fill: $logoActive;
-  border: 1px solid $logoActive;}
+  border: 1px solid $logoActive;
 }
 
+
+
+
+@media screen and (min-width: 480px)and (max-width:768px ) {
+  
+  .container {
+      width: 768px;
+    }
+    .ident {
+      padding: 0px;
+      gap: 30px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__pictogram {
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        fill: #afb1b8;
+        padding: 18px 32px 15px 32px;
+        transition: fill $trans, border $trans;
+      }
+    }
+  }
+
+  

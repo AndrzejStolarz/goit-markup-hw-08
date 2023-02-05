@@ -12,10 +12,18 @@
 *{list-style-type: none}
 
 .container {
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 0 15px;
-  }
+  
+   max-width:480px;
+  @media(min-width:768px){
+    max-width:768px;
+
+    @media(min-width:1200px){
+  max-width: 1200px; }
+  }}
+
   
   .section {
     padding-top: 94px;
