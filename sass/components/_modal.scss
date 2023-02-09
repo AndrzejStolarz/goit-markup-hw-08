@@ -1,3 +1,4 @@
+@media screen and (min-width: 1200px) {
 .backdrop{ display:flex;
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -229,7 +230,239 @@ transition-timing-function: ease-out;}
 }
 }
 
+}
+    @media screen and (min-width: 480px) and (max-width: 1200px){
+      .backdrop{ display:flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+.is-hidden {
+  visibility: hidden;
+pointer-events: none;
+opacity: 0;
+transition-delay: 500ms;
+transition-property:opacity, visibility;
+transition-duration: 250ms;
+transition-timing-function: ease-out;}
+  
+.modal {
+  position: relative;
+  width: 450px;
+  height: 581px;
+  background-color:$fillColor;
+  border-radius: 4px;
+  box-shadow: $modalShadow;
+  transform: translateY(0);
+  transition-property:transform;
+  transition-duration: $trans;
+  transition-timing-function: $trans;
+            
 
+&__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 40px 40px 12px 40px;
+  text-align: center;}
+            
+        
+&__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 40px;}
+
+
+&__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $mailColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;}
+
+
+&__label--modifer {
+  fill: $modalColor;
+  display: flex;
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  transition: fill $trans;}
+
+
+
+
+&__text--modifer {
+  width: 370px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+  outline: none;
+  transition: border-color $trans;}
+  
+
+&__icon--modifer {
+    fill: $mainFont;
+    display: flex;
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+    transition: fill $trans;}
+
+&__comment--modifer {
+    font-weight: 400;
+    font-size: 12px;    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $mailColor;
+    width: 370px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+  }
+}
+
+
+.modal__label:focus-within .modal__text--modifer {
+  border-color: $logoActive;
+}
+
+.modal__label:focus-within .modal__icon--modifer {
+  fill:$logoActive;
+}
+
+.modal__comment--modifer:focus {
+  border-color: $logoActive
+}
+  
+  
+
+
+            
+.is-hidden .modal {
+         transform: translateY(-100%) scale(0.25);
+                }
+
+
+.check {
+  display:flex;
+  position:absolute;
+  gap: 7px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 20px;
+
+&__wrap {
+    position:relative;
+    
+    width: 16px;}
+  
+&__hidden {
+    display: none;
+    padding: 8px; 
+    border: 2px;
+    color: $mainFont; }
+  
+  
+  
+&__not-checked {
+    position: relative;
+    transform: translate(0%, -50%);
+    top: 8px;
+    left: 0;
+    opacity: 1;
+    height: 15px;
+    width:  16px;
+    border-radius: 2px;
+    border:solid 1px $mainFont;}
+  
+&__checked{
+    position: absolute;
+    transform: translate(0%, -50%);
+    background-color:$logoActive;
+    top: 8px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    height: 15px;
+    width:  16px;
+    border-radius: 2px;
+    border:solid 1px $logoActive;}
+  
+    
+  
+  
+    &__status{
+      font-weight: 400;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $modalColor;
+        position: relative;
+        display: flex;
+        gap: 4px;}
+    
+
+  &__link {
+    text-decoration: underline;
+    color: $logoActive;
+}
+  
+  &__btn--modifer {
+    
+    font-weight: 700;
+    font-size: 16px;
+    color:$fillColor;
+    background-color: $logoActive;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    margin-left: 95px;
+    margin-top: 55px;
+    padding: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+ 
+  &__hidden:checked ~ &__checked{
+    opacity: 1;
+}
+
+&__hidden:checked + &__not-checked {
+    opacity: 0;
+}
+}
+    }
 
 
 
