@@ -1,6 +1,9 @@
+@media screen and (min-width: 1200px){
+
 .banner {
     text-align: center;
     padding: 206px;
+    width: 100%;
   
 
   &--set {
@@ -21,5 +24,56 @@
         margin-bottom: 30px;
       }
     }
+  } 
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+      .banner {
+    text-align: center;
+    padding: 206px;
+    width: 100%;
+  
 
-    
+  &--set {
+    background: $backroundColor;
+    background-image:  linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/people.jpg);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+
+  &__title {
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color:$fillColor;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+   .banner { 
+    text-align: center;
+    padding: 206px;
+  
+
+  &--set {
+    background: $backroundColor;
+    background-image:  linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/people.jpg);
+    max-width: 768px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+
+  &__title {
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color:$fillColor;
+        margin-bottom: 30px;
+      }
+    }
+  }

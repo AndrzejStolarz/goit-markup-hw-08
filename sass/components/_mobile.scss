@@ -1,11 +1,148 @@
-.menu-toggle {
-  outline: none;
-  background: none;
-  border: none;
-  padding: 0px;}
-  
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .menu-toggle {
+     display: flex;
+    position: absolute;
+    left: 450px;
+    outline: none;
+    background: none;
+    border: none;
+    padding: 0px;
+    max-width: 100%;
+    cursor: pointer;
+    
+
+    &:hover,
+    &:focus {
+      color: $logoActive;
+    }
+    
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $fillColor;
+    z-index: 999;
+    margin: 0;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .menu {
+    &__toggle {
+      background-color: transparent;
+      border: none;
+    }
+
+    &__toggle:hover svg,
+    &__toggle:focus svg {
+      color: $logoActive;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .mobile {
+    margin-top: 48px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 170px;
+
+    &__link {
+      color: $mainFont;
+      text-decoration: none;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1, 17;
+      letter-spacing: 0.02em;
+      margin: unset;
+      padding-bottom: 32px;
+    }
+&__link:focus,
+&__link:hover{ color:$logoActive;
+}
+    &__socials {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 40px;
+      margin-right: 83px;
+      margin-bottom: 48px;
+      gap: 10px;
+    }
+
+    &__socials-link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1, 22;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: $logoActive;
+    }
+
+    &__separate {
+      list-style-type: none;
+      width: 1px;
+      height: 100%;
+      color: rgba(33, 33, 33, 0.2);
+    }
+
+    &__contact {
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      list-style-type: none;
+    }
+
+    &__tel {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1, 25;
+      letter-spacing: 0.02em;
+      color:$logoActive;
+      margin: unset;
+    }
+
+    &__email {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1, 16;
+      letter-spacing: 0.02em;
+      color:$mailColor;
+      margin: unset;
+      margin-bottom: 64px;
+    }
+  }
+
 }

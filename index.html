@@ -43,12 +43,13 @@
           ></path>
         </svg>
       </button>
+        
         <div class="general-nav">
           <a class="logo  logo__first" href="./index.html"
             ><span class="logo__last"> Web</span>Studio</a
           >
-        <div class="menu">
-          <ul class=" menu menu__link-basic">
+
+          <ul class=" menu menu__link--basic">
             <li class="  menu--active">
               <a class="menu  menu__headline    " href="#">Agencja</a></li>
             <li>
@@ -59,10 +60,10 @@
             <li><a class=" menu menu__headline " href="#">Kontakt</a></li>
           </ul>
            
-          <ul class="  menu__link-basic  ">
+          <ul class="  menu__link--basic menu__contacts ">
             <li>
               <a
-                class="link__reset  menu menu__headline "
+                class="link__reset  menu menu__headline menu__mail "
                 href="mailto:info@devstudio.com"
               >
                 <svg class="link__icon-envelop" width="16" height="12">
@@ -78,7 +79,7 @@
             </li>
             <li>
               <a
-                class=" link__reset   menu  menu__headline "
+                class=" link__reset   menu  menu__headline menu__tel "
                 href="tel:+48111111111"
               >
                 <svg class="link__icon-tel" width="10" height="16">
@@ -93,12 +94,13 @@
             </li>
           </ul>
           </div>
-          </div>
-      </nav>
+          
+        </nav>
+        
     </header>
     <main>
       <!--EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU-->
-      <section class="banner   background-title banner--set section">
+      <section class="banner  banner--set section">
         <div class="container">
           <h1 class="title   banner__title">
             EFEKTYWNE ROZWIĄZANIA <br />
@@ -199,7 +201,7 @@
               <div>
             </div>
           </div>
-            </li>
+        </li>
             <li>
               <div class="info__photo">
               <img class=" info__photo--space"
@@ -224,6 +226,8 @@
               <figure class="team__photo--shadow">
                 <img 
                   src="images/img2.jpg"
+                  srcset="images/img2.jpg 270w,
+                  images/mobile/img2"
                   alt="Product Designer photo"
                   width="270"
                   height="260"
@@ -492,25 +496,55 @@
           ></path>
         </svg>
       </button>
+<ul class="mobile">
+        <li><a href="#" class="mobile__link">Agencja</a></li>
+        <li><a href="#" class="mobile__link">Portfolio</a></li>
+        <li><a href="#" class="mobile__link">Kontakt</a></li>
+    </ul>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+  <ul class="mobile__contact">
+        <li><a href="tel:+48111111111" class="mobile__tel">+48111111111</a></li>
+       <li class="mobile__email"><a href="mailto:info@devstudio.com" class="mobile__email">info@devstudio.com</a></li>
       </ul>
-    </div>
+  <ul class="mobile__socials">
+            <li>
+              <a class="mobile__socials-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile__separate">
+              |
+            </li>
+            <li><a class="mobile__socials-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile__separate">
+              |
+            </li>
+           <li> 
+              <a class="mobile__socials-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile__separate">
+              |
+            </li>
+           <li> 
+              <a class="mobile__socials-link" href="#">Linkedln</a>
+            </li>
+      </ul>
+          
+    
+</div>
+
+     
+    
     <!--footer-->
     <footer class=" footer  ">
       <div class="container">
         <div class=" footer__box">
           <div>
-            <a class="logo logo__first" href="./index.html"
-              ><span class="logo__last"> Web</span
-              ><span class="logo__long">Studio</span></a
+            <a class="logo-footer logo-footer__first" href="./index.html"
+              ><span class="logo-footer__last"> Web</span
+              ><span class="logo-footer__long">Studio</span></a
             >
             <address>
-              <ul class="logo__address">
+              <ul class="logo-footer__address">
                 <li>m. Warszawa Aleje Jerozolimskie 21</li>
                 <li>
                   <a

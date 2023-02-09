@@ -38,9 +38,9 @@
     justify-content: space-between;
     align-items: center;
   }}
-  /*
-///TABLET///
-  @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd){
+  
+
+ 
   .logo {
     font-family: "Raleway";
     font-style: normal;
@@ -82,9 +82,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  }
+  
 ///DESKTOP//
-  @media screen and (min-width: $breakpointDesktopStart){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     .logo {
       font-family: "Raleway";
       font-style: normal;
@@ -98,7 +98,7 @@
       height: 31px;
       width: 145px;
       top: 24px;
-      margin-right: 93px;
+      margin-right: 83px;
     
       &__first
      {color: $mainFont;}
@@ -125,6 +125,37 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
     }
-  */
+  @media screen and (min-width: 480px)and (max-width:768px ) {
+   
+    .general-nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      width: 100%;}
+
+   .logo{
+    font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.033em;
+      text-decoration: none;
+      text-align:left;
+      border: none;
+      height: 31px;
+      width: 145px;
+      top: 24px;
+      margin-right: 83px;
+    width: 100%;
+
+ &__first
+     {color: $mainFont;}
+        
+  &__last {
+      color: $logoActive;}
+ &__long{ color:$fillColor}
+      }}

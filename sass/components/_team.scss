@@ -164,11 +164,13 @@
     line-height: 1.66;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+}
   
 &__wraps{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 30px;
     justify-content: center;}
   

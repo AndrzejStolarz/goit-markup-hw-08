@@ -1,8 +1,52 @@
+
 .join{
     padding-left: 70px;
     padding-top: 7;
+    
   
 
+  
+&__font{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$fillColor;
+    margin: 0px;}
+  
+
+&__box{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;}
+  
+
+&__icon--modifer{
+    border-radius: 50%;
+    fill: $fillColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  
+&__icon--modifer:hover,
+&__icon--modifer:focus{
+    border-radius: 50%;
+    fill: $fillColor;
+    background-color: $logoActive;
+    outline: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .join{
+    padding-left: 70px;
+    padding-top: 7;
+    width:100%;
+  display: inline;
+position: absolute;
   
 &__font{
     font-weight: 700;
@@ -35,5 +79,47 @@
     fill: $fillColor;
     background-color: $logoActive;
     outline: none;}
-}
+}}
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .join{
+    padding-left: 70px;
+    padding-top: 7;
+    display: inline;
+    
+    
+  
 
+  
+&__font{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$fillColor;
+    margin: 0px;}
+  
+
+&__box{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;}
+  
+
+&__icon--modifer{
+    border-radius: 50%;
+    fill: $fillColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  
+&__icon--modifer:hover,
+&__icon--modifer:focus{
+    border-radius: 50%;
+    fill: $fillColor;
+    background-color: $logoActive;
+    outline: none;}
+}}
