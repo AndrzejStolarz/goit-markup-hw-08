@@ -28,7 +28,7 @@
     @media screen and (min-width: 768px) and (max-width: 1200px){
       .banner {
     text-align: center;
-    padding: 206px;
+    padding: 118px;
     width: 100%;
   
 
@@ -52,10 +52,11 @@
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+
    .banner { 
     text-align: center;
-    padding: 206px;
+    padding: 150px;
   
 
   &--set {
@@ -74,7 +75,7 @@
         text-align: center;
         color:$fillColor;
         margin-bottom: 30px;
-        width: 100%;
+        
       }
     }
   }

@@ -59,7 +59,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $mailColor;
   }
 &--quiet {
@@ -91,18 +91,19 @@
 
 //Media queries//   768px//
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container{width: 768px;}
+  
+  
   .symbol{
   display: flex;
   flex-wrap: wrap;
-  position:relative;
-   justify-content: center;
+  
+  justify-content: center;
   
     
     &__icon {
-    width:25%;
+    width:50%;
     text-align: center;
-    color: $mailColor
+    color: $mailColor;
     }
 &--quiet {
     background-color: $buttonColor;
@@ -111,13 +112,13 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $mailColor;
-    width: 25%;
+    width: 50%;
   }
 }
 }
-@media screen and (min-width: 480px)and (max-width:768px ) {
+@media screen and  (max-width:768px ) {
 .symbol{
   width: 100%;
   max-width:450px;
@@ -138,7 +139,7 @@
   &__text {
     font-size: 14px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $mailColor;
   width:50%
   }}}

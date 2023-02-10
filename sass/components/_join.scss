@@ -42,11 +42,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
     .join{
-    padding-left: 70px;
+    padding-left: 250px;
     padding-top: 7;
-    width:100%;
-  display: inline;
-position: absolute;
+   
+    display:inline;
+    position: relative;
+    
+
   
 &__font{
     font-weight: 700;
@@ -60,7 +62,7 @@ position: absolute;
 
 &__box{
     list-style: none;
-    display: inline-flex;
+
     justify-content: center;
     gap: 10px;
     padding-top: 20px;}
@@ -80,7 +82,7 @@ position: absolute;
     background-color: $logoActive;
     outline: none;}
 }}
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and  (max-width: 768px){
     .join{
     padding-left: 70px;
     padding-top: 7;
