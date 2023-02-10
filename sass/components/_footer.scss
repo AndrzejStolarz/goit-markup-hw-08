@@ -53,12 +53,13 @@
     background: $backroundColor;
 
     &__box {
-      display: inline-flex;
+      display:inline ;
       flex-wrap: wrap;
-      justify-content: left;
+      justify-content: center;
       text-align: center;
     }
     .logo-footer {
+      display: block;
       font-family: "Raleway";
       font-style: normal;
       font-weight: 700;
@@ -66,10 +67,12 @@
       line-height: 1.19;
       letter-spacing: 0.033em;
       text-decoration: none;
-      text-align: center;
+      text-align: left;
       border: none;
-      height: 31px;
+      height: 31px;}
       
+
+
 
       &__first {
         color: $mainFont;
@@ -83,36 +86,67 @@
       }
 
       &__address {
-        display: inline;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        text-align: left;
-        color: $fillColor;
+      display: block;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: $fillColor;
       }
     }
   }
-}
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .footer {
-    padding: 60px 0;
-    background: $backroundColor;
+
+@media screen and (max-width: 768px) {
+ .logo-footer {
+  display: block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.033em;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    height: 31px;
+    padding-bottom: 20px;
 
     &__box {
-      display: block;
+      display: inline-flex;
       flex-wrap: wrap;
-      justify-content: center;
-      padding-bottom: 60px;
+      justify-content: left;
       text-align: center;
-      width: 100%;
+    }
+    &__first {
+      color: $mainFont;
+    }
+
+    &__last {
+      color: $logoActive;
+    }
+    &__long {
+      color: $fillColor;
+    }
+
+    &__address {
+      display: block;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: $fillColor;
     }
   }
 }
 
+  
 @media screen and  (max-width: 768px) {
   .logo-footer {
     font-family: "Raleway";
@@ -139,14 +173,14 @@
     }
 
     &__address {
-      display: inline;
+      display: block;
       font-style: normal;
       text-decoration: none;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.71;
       letter-spacing: 0.03em;
-      text-align: left;
+      text-align: center;
       color: $fillColor;
     }
   }

@@ -32,7 +32,7 @@
     z-index: 999;
     margin: 0;
 
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 250ms ease-in-out;}
 }
 
@@ -45,12 +45,12 @@
     margin-left: auto;
     align-items: center;
     justify-content: center;
-    left: 500px;
+    left: 550px;
     outline: none;
     background: none;
     border: none;
     padding: 0px;
-    max-width: 100%;
+    
     cursor: pointer;
     
 
@@ -76,7 +76,7 @@
   }
 
   .menu-container.is-open {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 
   .menu {
@@ -91,8 +91,8 @@
     }
   }
 }
+@media screen and  (max-width: 768px) {
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
   .mobile {
     margin-top: 48px;
     margin-left: 40px;
