@@ -231,8 +231,10 @@ transition-timing-function: ease-out;}
 }
 
 }
-    @media screen and (min-width: 480px) and (max-width: 1200px){
+    @media screen and (max-width: 1200px){
+
       .backdrop{ display:flex;
+        width: 450px;
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     justify-content: center;

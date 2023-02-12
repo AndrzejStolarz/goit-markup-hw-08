@@ -2,11 +2,13 @@
 .join{
     padding-left: 70px;
     padding-top: 7;
+    display: inline;
     
   
 
   
 &__font{
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
@@ -44,9 +46,9 @@
     .join{
     padding-left: 250px;
     padding-top: 7;
-   
     display: block;
     position: relative;
+    margin-bottom: 60px;
     
 
   
@@ -84,15 +86,17 @@
 }}
 @media screen and  (max-width: 768px){
     .join{
-    padding-left: 70px;
+    padding-left: 15px;
     padding-top: 7;
-    display: inline;
+    display:inline;
+    
     
     
   
 
   
 &__font{
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
@@ -107,7 +111,8 @@
     display:flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 20px;}
+    padding-top: 20px;
+margin-bottom: 60px;}
   
 
 &__icon--modifer{

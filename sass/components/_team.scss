@@ -76,9 +76,11 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
     .team{
+        display: flex;
+     
     background: #f5f4fa;
     text-decoration: none;
-    
+    width: 708px;
 
   
 

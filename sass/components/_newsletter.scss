@@ -109,15 +109,15 @@ padding-left: 16px;}
     padding-left: 16px ;}
 
 &__btn {
-  display: flex;
-position:absolute;
-left: 400px;
+  display: inline;
+justify-items: right;
+left: 4px;
 height: 50px;
-  width: 50%;
+  margin-top: 20px;
   border: none;
   border-radius: 4px;
   background-color: $logoActive;
- margin-right: 100px;
+ 
   gap: 24px;
   transition: background-color $trans
 }
@@ -148,7 +148,7 @@ display: inline;
 
 width: 100%;
 height: 86px;
-margin-left: 78px;
+margin-left: 15px;
 margin-top: 20px;
 
 
@@ -165,7 +165,7 @@ text-align: center;}
 
 &__box {
 display:block;
-flex-wrap: wrap;}
+}
         
 
 &__label--modifer{
@@ -189,11 +189,12 @@ padding-right: 15px;}
   align-items: center;
   margin-top: 20px;
  
+ 
   height: 50px;
   border: none;
   border-radius: 4px;
   background-color: $logoActive;
-  margin-left: 70px;
+  margin-left: 115px;
   width: 100%;
   gap: 24px;
   transition: background-color $trans

@@ -48,12 +48,15 @@
     
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+ .container{ padding-bottom: 60px;
+padding-top: 60px;}
+ 
   .footer {
     padding: 60px 0;
     background: $backroundColor;
 
     &__box {
-      display:inline ;
+      display:flex ;
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
@@ -67,7 +70,7 @@
       line-height: 1.19;
       letter-spacing: 0.033em;
       text-decoration: none;
-      text-align: left;
+      text-align: center;
       border: none;
       height: 31px;}
       
@@ -86,7 +89,7 @@
       }
 
       &__address {
-      display: block;
+      display: inline;
       font-style: normal;
       text-decoration: none;
       font-size: 14px;
@@ -94,6 +97,7 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       text-align: center;
+      justify-content: center;
       color: $fillColor;
       }
     }
@@ -101,6 +105,14 @@
 
 
 @media screen and (max-width: 768px) {
+  .container{ padding-bottom: 60px;
+   padding-top: 60px;}
+
+  .footer {
+    padding: 60px 0;
+    background: $backroundColor;
+  justify-items: center;}
+
  .logo-footer {
   display: block;
     font-family: "Raleway";
@@ -113,12 +125,12 @@
     text-align: center;
     border: none;
     height: 31px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     &__box {
       display: inline-flex;
       flex-wrap: wrap;
-      justify-content: left;
+      justify-content: center;
       text-align: center;
     }
     &__first {
@@ -133,7 +145,7 @@
     }
 
     &__address {
-      display: block;
+      display: inline;
       font-style: normal;
       text-decoration: none;
       font-size: 14px;
@@ -142,12 +154,17 @@
       letter-spacing: 0.03em;
       text-align: center;
       color: $fillColor;
+      margin-bottom: 60px;
     }
   }
 }
 
   
 @media screen and  (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+    background: $backroundColor;}
+
   .logo-footer {
     font-family: "Raleway";
     font-style: normal;
