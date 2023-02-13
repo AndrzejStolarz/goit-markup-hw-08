@@ -39,13 +39,11 @@
   .menu-toggle {
      display: flex;
     position: absolute;
-    
-
-  
+    left: 90%;
     margin-left: auto;
     align-items: center;
     justify-content: center;
-    left: 500px;
+    
     outline: none;
     background: none;
     border: none;
@@ -78,6 +76,7 @@
 
   .menu-container.is-open {
     transform: translateX(0%);
+    left: 0;
   }
 
   .menu {
